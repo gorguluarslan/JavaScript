@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genel tekrar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="btn-group m-5">
+                <button id="btn1" class="btn btn-primary">Length</button>
+                <button id="btn2" class="btn btn-secondary">includes</button>
+                <button id="btn3" class="btn btn-success">concat</button>
+                <button id="btn4" class="btn btn-danger">entries</button>
+                <button id="btn5" class="btn btn-warning">forEach</button>
+                <button id="btn6" class="btn btn-info">push</button>
+                <button id="btn7" class="btn btn-light">pop</button>
+
+            </div>
+        </div>
+    </div>
+    
+    <script>
+var dizi = ["a","b","c","d","e","f","g","h","i","j","k","m",];
+document.getElementById('btn1').onclick = function() {
+    alert(dizi.length);
+    console.log(dizi.length);
+}
+document.getElementById('btn2').onclick = function() {
+   if(dizi.includes('g')) {
+alert('Aradığınız kelime burada var');
+   } else(
+       alert('Aradığınız kelime burada yok')
+   )
+}
+var dizi1 = [1,2,3]
+document.getElementById('btn3').onclick = function() {
+   var sonuc = dizi.concat(dizi1);
+   alert(sonuc);
+   console.log(sonuc);
+}
+var sonraki = dizi.entries();
+document.getElementById('btn4').onclick = function() {
+  var eleman = sonraki.next().value;
+  alert(eleman);
+  console.log(eleman);
+
+}
+
+document.getElementById('btn5').onclick = function() {
+   dizi.forEach(function(item,index) {
+console.log(index+' - '+item);
+alert(index+ ' - ' + item );
+   }); 
+
+}
+
+document.getElementById('btn6').onclick = function() {
+   dizi.push('n');
+   alert(dizi);
+   console.log(dizi);
+}
+document.getElementById('btn7').onclick = function() {
+  
+   if(dizi.length > 0) {
+    dizi.pop();
+    alert(dizi);
+    console.log(dizi);
+   } else {
+       alert('silinecek eleman kalmadı');
+       console.log(('silinecek eleman kalmadı'));
+   }
+
+}
+
+    </script>
+</body>
+</html>

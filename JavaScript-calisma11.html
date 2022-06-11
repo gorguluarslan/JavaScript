@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toplama-Çıkarma İşlemleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row border-primary overflow:hidden;" >
+            <figure style="border:1px solid red; overflow:hidden;"> 
+                <pre>
+                    <span id="demo"></span>
+                </pre>
+            </figure>
+            <button class="btn btn-primary" onclick="hesapla('25','15')">Toplama yap </button>
+            <button class="btn btn-success" onclick="hesapla1(2,3,4)">Çıkarma yap! </button>
+        </div>
+
+    </div>
+
+    <script>
+        function hesapla(x,y) {
+            var s1 = parseInt(x);
+            var s2 = parseInt(y);
+            document.getElementById('demo').innerHTML = "Toplama İşleminin Sonucu: " + (s1+s2);
+        }
+        function hesapla1 (x,y,z) {
+            var s1 = Math.round(x);
+            var s2 = Number(y);
+            var s3 = Number(z);
+            document.getElementById('demo').innerHTML = "Çıkarma İşleminin Sonucu: " + (s1-s2-s3);
+          
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Oluşturma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row border" >
+            <figure > 
+                <pre>
+                    <span id="yazdir"></span>
+                </pre>
+            </figure>
+            <div class="col-md-6">
+                <label for="">Ad:</label>
+                <input type="text" class="form-control" id="txtAdi" placeholder="Adınızı Yazınız">
+
+            </div>
+            <div class="col-md-6">
+                <label for="">SoyAd:</label>
+                <input type="text" class="form-control" id="txtSoyadi" placeholder="Soyadınızı Yazınız">
+
+            </div>
+            <div class="col-12-lg" mt-3>
+                <button class="btn btn-dark" style="float: right;" onclick="mailOlustur(document.getElementById('txtAdi').value,document.getElementById('txtSoyadi').value)">Mail Oluştur</button>
+            </div>
+         </div>
+     </div>
+     <script>
+         function mailOlustur(x,y) {
+// var adi = document.getElementById('txtAdi').value;
+// var soyAdi = document.getElementById('txtSoyadi').value; //bunları yukarıdan çağırdığımız için yazmasak olur.
+var mail = x + '.' + y + '@gmail.com'
+document.getElementById('yazdir').innerHTML = mail;
+         }
+     </script>
+    
+</body>
+</html>
