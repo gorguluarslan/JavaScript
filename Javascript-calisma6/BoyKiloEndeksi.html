@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boy Kilo Endeksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Boy Kilo Endeksi Hesaplama</h1>
+    
+
+    <form action="">
+        <table>
+            <tr>
+                <td>Boyunuzu Yazınız(cm):</td>
+                <td><input type="number" id="boy"></td>
+            </tr>
+
+            <tr>
+                <td>Kilonuzu Yazınız(kg):</td>
+                <td><input type="number" id="kilo"></td>
+            </tr>
+
+            <tr>
+                <td>Vücut Kitle Endeksiniz:</td>
+                <td><p id="sonuc"></p></td>
+            </tr>
+        </table>
+
+        <input type="button" onclick="hesapla()" value="Hesapla" >
+        <input type="reset" value="Temizle">
+
+
+    </form>
+<footer>
+    Ccopyright <label id="zmn"></label>
+    Tüm hakları saklıdır.
+</footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

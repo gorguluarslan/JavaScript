@@ -1,0 +1,16 @@
+body{
+    background-color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+    height: 60px;
+    background-color: gray;
+    padding: 20px;
+    bottom: 0;
+    width: 95%;
+    position: absolute;
+
+}

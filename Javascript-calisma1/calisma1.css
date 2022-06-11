@@ -1,0 +1,14 @@
+.baslik1{
+    color: blueviolet;
+    background: pink;
+
+}
+.paragraf1{
+    color: blue;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color: aqua;
+}
